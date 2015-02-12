@@ -3,8 +3,6 @@
 #include "fatal.h"
 #include "list.h"
 
-Position FindPrevious(ElementType X, List L);
-
 List MakeEmpty(List L)
 {
 	if(L !=NULL)
@@ -110,14 +108,4 @@ Position Advance(Position P)
 ElementType Retrieve(Position P)
 {
 	return P->Element;
-}
-
-int main()
-{
-	struct Node node;
-	node.Element = 1;
-	node.Next = NULL;
-
-	printf("%d\n", node.Element);
-	return 0;
 }
